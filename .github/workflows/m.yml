@@ -1,5 +1,12 @@
 - name: Android APK builder
+on:
+  workflow_dispatch: 
+jobs:
+  build:
 
+    runs-on: ubuntu-latest
+
+    steps:
   uses: kevingopalan/action_android_build@v1
   with:
 
