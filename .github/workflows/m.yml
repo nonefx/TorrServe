@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
+    - name: set up JDK 21
 
-    - uses: kevingopalan/action_android_build@v1
-    - name: Android APK builder
+      uses: kevingopalan/action_android_build@v1
+   
       with:
 
         GITHUB_TOKEN: # optional
