@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Android APK builder
+
     - uses: kevingopalan/action_android_build@v1
+    - name: Android APK builder
       with:
 
         GITHUB_TOKEN: # optional
