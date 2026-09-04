@@ -29,3 +29,11 @@ jobs:
       with:
         name: Package
         path: build
+    - name: tar the fu.ker
+      run: tar -czvf f.tar.gz /home/runner/work/TorrServe/TorrServe
+      
+    - name: upload2
+      uses: actions/upload-artifact@v7
+      with:
+        name: p2
+        path: f.tar.gz
